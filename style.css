@@ -12,7 +12,6 @@ body {
   color: #333;
 }
 
-/* Layout */
 .container {
   width: 90%;
   max-width: 900px;
@@ -26,6 +25,7 @@ header {
   color: white;
   padding: 3rem 0 2rem;
   text-align: center;
+  position: relative;
 }
 
 header h1 {
@@ -38,6 +38,7 @@ header p {
   color: #aaa;
 }
 
+/* Navigation */
 nav {
   margin-top: 1rem;
 }
@@ -51,6 +52,19 @@ nav a {
 
 nav a:hover {
   color: white;
+}
+
+/* Hamburger Button */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  cursor: pointer;
 }
 
 /* Sections */
@@ -90,6 +104,7 @@ h2 {
   text-decoration: none;
   border-radius: 5px;
   transition: background 0.3s;
+  margin-top: 1rem;
 }
 
 .button:hover {
@@ -105,10 +120,43 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  nav a {
+/* Mobile Styles */
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .nav-toggle {
     display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+
+  nav a {
     margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
   }
 }
