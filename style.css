@@ -173,4 +173,44 @@ footer {
   h2 {
     font-size: 1.6rem;
   }
+  
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image {
+    margin-top: 1rem;
+  }
+
+}
+
+
+
+/* Header Layout with Profile Image */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allow stacking on small screens */
+}
+
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-image {
+  flex-shrink: 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.profile-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
