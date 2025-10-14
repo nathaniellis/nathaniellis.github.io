@@ -1,1 +1,1 @@
-# nathaniellis.github.io
+# Hey there! If you're reading this, I apologize! I'm reworking some of the displays on my site, so it's down for maintenance! In the meantime, you can check out my projects directly on my github at https://github.com/nathaniellis!
