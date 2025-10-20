@@ -24,7 +24,7 @@ body {
   padding: 2rem 0;
 }
 
-/* Header */
+/* ========== Header ========== */
 header {
   background-color: #046b43; /* Base green */
   background-image: 
@@ -37,6 +37,34 @@ header {
   position: relative;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allow stacking on small screens */
+}
+
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-image {
+  flex-shrink: 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.profile-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
@@ -47,7 +75,7 @@ header p {
   color: #aaa;
 }
 
-/* Navigation */
+/* ========== Navigation ========== */
 nav {
   margin-top: 1rem;
 }
@@ -123,7 +151,7 @@ h2 {
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 2rem;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
 }
 
 /* Flex container for project cards */
@@ -134,7 +162,7 @@ h2 {
   flex-wrap: wrap; /* Allows wrapping on small screens */
 }
 
-/* Individual project card */
+/* ========== Individual project card ========== */
 .project-card {
   flex: 1 1 45%; /* Grow/shrink, take up 45% of container */
   background-color: #f7f7f7;
@@ -283,32 +311,3 @@ footer {
 
 }
 
-
-
-/* Header Layout with Profile Image */
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap; /* allow stacking on small screens */
-}
-
-.header-text {
-  flex: 1;
-  min-width: 250px;
-}
-
-.profile-image {
-  flex-shrink: 0;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.profile-image img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
