@@ -144,7 +144,7 @@ h2 {
 #projects {
   max-width: 960px;
   margin: 60px auto;
-  padding: 0 20px;
+  padding: 10 20px;
 }
 
 #projects h2 {
@@ -171,9 +171,14 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   font-family: Georgia, 'Times New Roman', serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+  transition: box-shadow 0.3s ease;
 }
 
-/* Headings inside cards */
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* deeper shadow on hover */
+}
+
 .project-card h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
