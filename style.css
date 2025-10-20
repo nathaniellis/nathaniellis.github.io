@@ -123,6 +123,7 @@ h2 {
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
+  margin: 20px auto 40px auto;  /* top, right/left (auto), bottom */
 }
 
 .iframe-container iframe {
@@ -225,7 +226,9 @@ footer {
   }
 
   .iframe-container {
-    padding-bottom: 75%; /* Suitable for vertical mobile layout */
+    padding-bottom: 75%; /* taller aspect ratio for mobile */
+    margin-top: 15px;
+    margin-bottom: 30px;
   }
 
 }
