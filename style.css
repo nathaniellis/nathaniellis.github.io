@@ -112,7 +112,56 @@ h2 {
   text-decoration: underline;
 }
 
+/* ===== Projects Section ===== */
+#projects {
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
 
+#projects h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Flex container for project cards */
+.projects-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+/* Individual project card */
+.project-card {
+  flex: 1 1 45%; /* Grow/shrink, take up 45% of container */
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Headings inside cards */
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* Responsive: stack cards vertically on small screens */
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-card {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
 
 /* ========== Responsive iFrame Embed ========== */
 .iframe-container {
