@@ -195,6 +195,7 @@ h2 {
 .iframe-container {
   position: relative;
   width: 100%;
+  max-width: 1000px v
   height: 0;
   padding-bottom: 56.25%; /* Default to 16:9 aspect ratio */
   overflow: hidden;
