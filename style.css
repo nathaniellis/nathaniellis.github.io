@@ -117,7 +117,7 @@ nav a:hover {
 }
 
 section#dashboard {
-  padding: 1rem 0;
+  padding: 2rem 0;
   margin-top: 50px;
 }
 
@@ -157,11 +157,14 @@ h2 {
 
 /* Flex container for project cards */
 .projects-container {
+  width: 90%; /* Test */
   display: flex;
   gap: 20px;
   justify-content: space-between;
   flex-wrap: wrap; /* Allows wrapping on small screens */
 }
+
+
 
 /* ========== Individual project card ========== */
 .project-card {
