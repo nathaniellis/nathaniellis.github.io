@@ -113,7 +113,6 @@ nav a:hover {
 }
 
 .section.alt {
-  padding: 4rem 0;
   background: #eee;
 }
 
@@ -153,7 +152,7 @@ h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: left;
-  
+  padding:
 }
 
 /* Flex container for project cards */
