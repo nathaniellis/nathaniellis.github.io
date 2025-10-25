@@ -162,6 +162,7 @@ h2 {
   gap: 20px;
   justify-content: space-between;
   flex-wrap: wrap; /* Allows wrapping on small screens */
+  padding: 0 1rem;
 }
 
 
