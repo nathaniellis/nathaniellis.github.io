@@ -158,6 +158,7 @@ h2 {
 /* Flex container for project cards */
 .projects-container {
   width: 90%; /* Test */
+  margin: 0 auto;
   display: flex;
   gap: 20px;
   justify-content: space-between;
