@@ -203,6 +203,13 @@ h2 {
 }
 
 /* ========== Responsive iFrame Embed ========== */
+
+#dashboard {
+  max-width: 1460px;
+  margin: 60px auto;
+  padding: 10 20px;
+}
+
 .iframe-container {
   position: relative;
   width: 100%;
